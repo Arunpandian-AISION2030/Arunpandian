@@ -14,19 +14,21 @@ const About = () => {
                 Hello, I'm Arun Pandian P
               </h3>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                I'm a passionate software developer with a deep love for technology and innovation. 
-                Currently pursuing B.Tech in Artificial Intelligence & Data Science at EASA College 
-                of Engineering and Technology, Coimbatore.
+                I'm a passionate <strong>Graphic Designer & Technology Enthusiast</strong> with a deep love for 
+                creating visually stunning designs and innovative digital solutions. Currently pursuing 
+                B.Tech in Artificial Intelligence & Data Science at EASA College of Engineering and Technology, Coimbatore.
               </p>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 I recently completed my internship in Graphic Design at Lovely Offset Printers, 
                 where I worked on real-time projects and gained valuable industry experience. 
-                My expertise spans modern web technologies and AI/ML concepts.
+                My expertise spans both creative design and modern web technologies, allowing me to bridge 
+                the gap between aesthetics and functionality.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies, working on 
-                personal projects, or learning about the latest trends in artificial intelligence 
-                and software development.
+                When I'm not designing or coding, you'll find me exploring new design trends, 
+                working on personal projects, or learning about the latest innovations in artificial intelligence 
+                and web development. I believe in the power of combining creativity with technology to create 
+                meaningful experiences.
               </p>
             </div>
             
@@ -35,15 +37,15 @@ const About = () => {
               <ul className="space-y-4">
                 <li className="flex items-center">
                   <div className="w-3 h-3 bg-amber-400 rounded-full mr-4"></div>
-                  <span className="text-gray-700">Building innovative AI solutions</span>
+                  <span className="text-gray-700">Creating impactful visual designs</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-3 h-3 bg-amber-500 rounded-full mr-4"></div>
-                  <span className="text-gray-700">Continuous learning & growth</span>
+                  <span className="text-gray-700">Building innovative web applications</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-3 h-3 bg-amber-600 rounded-full mr-4"></div>
-                  <span className="text-gray-700">Creating impactful user experiences</span>
+                  <span className="text-gray-700">Continuous learning & growth</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-3 h-3 bg-amber-700 rounded-full mr-4"></div>
@@ -53,7 +55,8 @@ const About = () => {
               
               <div className="mt-8 p-4 bg-amber-50 rounded-lg border border-amber-200">
                 <p className="text-sm text-gray-600 italic">
-                  "Innovation distinguishes between a leader and a follower. I strive to lead through technology."
+                  "Design is not just what it looks like and feels like. Design is how it works. 
+                  I strive to create designs that are both beautiful and functional."
                 </p>
               </div>
             </div>

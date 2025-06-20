@@ -13,9 +13,9 @@ const Hero = () => {
             backgroundImage: `url('/lovable-uploads/2fd3d84a-e098-4f16-8d8e-18186e71a5db.png')`,
           }}
         />
-        {/* Warm overlay similar to Rachel's site */}
-        <div className="absolute inset-0 bg-gradient-to-r from-amber-900/80 via-orange-800/70 to-amber-700/80"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-amber-900/30 to-amber-900/60"></div>
+        {/* Lighter overlay to make photo more visible */}
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-900/60 via-orange-800/50 to-amber-700/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-amber-900/20 to-amber-900/50"></div>
       </div>
 
       {/* Content */}
@@ -30,15 +30,15 @@ const Hero = () => {
               </span>
             </h1>
             
-            {/* Subtitle */}
+            {/* Updated Subtitle */}
             <p className="text-xl md:text-2xl text-amber-100 mb-8 animate-fade-in-delay drop-shadow-lg">
-              Software Developer & Technology Enthusiast
+              Graphic Designer & Technology Enthusiast
             </p>
             
             {/* Description */}
             <p className="text-lg text-amber-50 mb-12 max-w-2xl mx-auto animate-fade-in-delay-2 drop-shadow-lg">
-              Passionate about creating innovative solutions and building scalable applications 
-              that make a difference in people's lives. Let's build something amazing together.
+              Passionate about creating stunning visual designs and innovative digital solutions. 
+              I blend creativity with technology to bring ideas to life through compelling graphics and modern web applications.
             </p>
             
             {/* Action Buttons */}
