@@ -1,7 +1,7 @@
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-gray-50">
+    <section id="about" className="py-20 bg-gradient-to-b from-amber-50 to-white">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">
@@ -15,45 +15,45 @@ const About = () => {
               </h3>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 I'm a passionate software developer with a deep love for technology and innovation. 
-                My journey in the tech world has been driven by curiosity and a relentless pursuit 
-                of excellence in creating solutions that matter.
+                Currently pursuing B.Tech in Artificial Intelligence & Data Science at EASA College 
+                of Engineering and Technology, Coimbatore.
               </p>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                With expertise spanning modern web technologies, I specialize in building scalable 
-                applications that deliver exceptional user experiences. I believe in writing clean, 
-                maintainable code and staying updated with the latest industry trends.
+                I recently completed my internship in Graphic Design at Lovely Offset Printers, 
+                where I worked on real-time projects and gained valuable industry experience. 
+                My expertise spans modern web technologies and AI/ML concepts.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies, contributing to 
-                open-source projects, or mentoring fellow developers. I'm always excited about 
-                the next challenge and opportunity to grow.
+                When I'm not coding, you'll find me exploring new technologies, working on 
+                personal projects, or learning about the latest trends in artificial intelligence 
+                and software development.
               </p>
             </div>
             
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+            <div className="bg-white p-8 rounded-lg shadow-lg border border-amber-200">
               <h4 className="text-xl font-semibold text-gray-900 mb-6">What Drives Me</h4>
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <div className="w-3 h-3 bg-gray-400 rounded-full mr-4"></div>
-                  <span className="text-gray-700">Building innovative solutions</span>
+                  <div className="w-3 h-3 bg-amber-400 rounded-full mr-4"></div>
+                  <span className="text-gray-700">Building innovative AI solutions</span>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-3 h-3 bg-gray-500 rounded-full mr-4"></div>
+                  <div className="w-3 h-3 bg-amber-500 rounded-full mr-4"></div>
                   <span className="text-gray-700">Continuous learning & growth</span>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-3 h-3 bg-gray-600 rounded-full mr-4"></div>
+                  <div className="w-3 h-3 bg-amber-600 rounded-full mr-4"></div>
                   <span className="text-gray-700">Creating impactful user experiences</span>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-3 h-3 bg-gray-700 rounded-full mr-4"></div>
+                  <div className="w-3 h-3 bg-amber-700 rounded-full mr-4"></div>
                   <span className="text-gray-700">Collaborating with amazing teams</span>
                 </li>
               </ul>
               
-              <div className="mt-8 p-4 bg-gray-50 rounded-lg">
+              <div className="mt-8 p-4 bg-amber-50 rounded-lg border border-amber-200">
                 <p className="text-sm text-gray-600 italic">
-                  "Code is poetry written in logic, and I strive to make every line count."
+                  "Innovation distinguishes between a leader and a follower. I strive to lead through technology."
                 </p>
               </div>
             </div>
