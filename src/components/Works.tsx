@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
@@ -11,7 +10,7 @@ const Works = () => {
       description: "A comprehensive dashboard application built with modern web technologies, featuring data visualization, user management, and real-time analytics.",
       image: "/lovable-uploads/cc3ba234-f191-4cff-bbad-4eb999d9af4f.png",
       technologies: ["React", "TypeScript", "Chart.js", "Tailwind CSS"],
-      liveUrl: "#",
+      liveUrl: "https://profile-replica-polished-project.vercel.app/dashboard",
       githubUrl: "#"
     },
     {
@@ -69,11 +68,21 @@ const Works = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
                     <div className="flex gap-2">
-                      <Button size="sm" variant="secondary" className="bg-white/90 hover:bg-white">
+                      <Button 
+                        size="sm" 
+                        variant="secondary" 
+                        className="bg-white/90 hover:bg-white"
+                        onClick={() => window.open(project.liveUrl, '_blank')}
+                      >
                         <ExternalLink className="h-4 w-4 mr-1" />
                         Live
                       </Button>
-                      <Button size="sm" variant="secondary" className="bg-white/90 hover:bg-white">
+                      <Button 
+                        size="sm" 
+                        variant="secondary" 
+                        className="bg-white/90 hover:bg-white"
+                        onClick={() => window.open(project.githubUrl, '_blank')}
+                      >
                         <Github className="h-4 w-4 mr-1" />
                         Code
                       </Button>
