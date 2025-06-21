@@ -10,7 +10,7 @@ const Works = () => {
       description: "A comprehensive dashboard application built with modern web technologies, featuring data visualization, user management, and real-time analytics.",
       image: "/lovable-uploads/0598bbcf-4be9-44ff-853d-7fb2348e82d3.png",
       technologies: ["React", "TypeScript", "Chart.js", "Tailwind CSS"],
-      liveUrl: "https://profile-replica-polished-project.vercel.app/",
+      liveUrl: "https://dashboard-arunpandi47777-gmailcoms-projects.vercel.app/",
       githubUrl: "#"
     },
     {
