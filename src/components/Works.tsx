@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
@@ -23,6 +24,15 @@ const Works = () => {
       githubUrl: "#"
     },
     {
+      title: "GrowUp Journal",
+      category: "Web Development",
+      description: "A personal growth and mindfulness platform featuring daily inspirational quotes, mood tracking, and journaling capabilities for personal development.",
+      image: "/lovable-uploads/ed3291db-1f2d-4300-8408-d9e21b6c4ed6.png",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Firebase"],
+      liveUrl: "https://growup-journel.vercel.app/",
+      githubUrl: "#"
+    },
+    {
       title: "Personal Blog Platform",
       category: "Web Development",
       description: "A dynamic blog platform where I share insights about technology, design trends, and personal experiences in the tech industry.",
@@ -43,27 +53,27 @@ const Works = () => {
   ];
 
   return (
-    <section id="works" className="py-20 bg-gradient-to-b from-white to-amber-50">
-      <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+    <section id="works" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-white to-amber-50">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
               My Works
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
               A showcase of my creative projects spanning web development, graphic design, 
               and digital solutions that bring ideas to life.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
             {projects.map((project, index) => (
               <Card key={index} className="group overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-200">
                 <div className="relative overflow-hidden">
                   <img 
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-48 sm:h-56 lg:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
@@ -71,45 +81,45 @@ const Works = () => {
                       <Button 
                         size="sm" 
                         variant="secondary" 
-                        className="bg-white/90 hover:bg-white"
+                        className="bg-white/90 hover:bg-white text-xs sm:text-sm"
                         onClick={() => window.open(project.liveUrl, '_blank')}
                       >
-                        <ExternalLink className="h-4 w-4 mr-1" />
+                        <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4 mr-1" />
                         Live
                       </Button>
                       <Button 
                         size="sm" 
                         variant="secondary" 
-                        className="bg-white/90 hover:bg-white"
+                        className="bg-white/90 hover:bg-white text-xs sm:text-sm"
                         onClick={() => window.open(project.githubUrl, '_blank')}
                       >
-                        <Github className="h-4 w-4 mr-1" />
+                        <Github className="h-3 w-3 sm:h-4 sm:w-4 mr-1" />
                         Code
                       </Button>
                     </div>
                   </div>
                 </div>
                 
-                <div className="p-6">
+                <div className="p-4 sm:p-6">
                   <div className="flex items-center justify-between mb-3">
-                    <span className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm font-medium">
+                    <span className="px-2 sm:px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs sm:text-sm font-medium">
                       {project.category}
                     </span>
                   </div>
                   
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-amber-600 transition-colors">
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 group-hover:text-amber-600 transition-colors">
                     {project.title}
                   </h3>
                   
-                  <p className="text-gray-600 mb-4 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-600 mb-4 leading-relaxed">
                     {project.description}
                   </p>
                   
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2">
                     {project.technologies.map((tech, techIndex) => (
                       <span 
                         key={techIndex}
-                        className="px-2 py-1 bg-gray-100 text-gray-600 rounded text-sm"
+                        className="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs sm:text-sm"
                       >
                         {tech}
                       </span>
@@ -123,10 +133,10 @@ const Works = () => {
           <div className="text-center mt-12">
             <Button 
               size="lg"
-              className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3"
+              className="bg-amber-600 hover:bg-amber-700 text-white px-6 sm:px-8 py-3 text-sm sm:text-base"
               onClick={() => window.open('https://github.com/Arunpandian-AISION2030', '_blank')}
             >
-              <Github className="mr-2 h-5 w-5" />
+              <Github className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
               View More on GitHub
             </Button>
           </div>
