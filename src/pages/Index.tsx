@@ -7,10 +7,12 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import WelcomePopup from "@/components/WelcomePopup";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
+      <WelcomePopup />
       <Navigation />
       <Hero />
       <About />
