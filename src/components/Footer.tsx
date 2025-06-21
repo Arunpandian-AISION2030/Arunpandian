@@ -1,5 +1,5 @@
 
-import { Mail, Phone, MapPin, Linkedin, Instagram } from "lucide-react";
+import { Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -77,23 +77,6 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-white">Contact</h3>
             <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <MapPin className="h-4 w-4 text-amber-400 flex-shrink-0" />
-                <span className="text-gray-400 text-sm">Coimbatore, India</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="h-4 w-4 text-amber-400 flex-shrink-0" />
-                <span className="text-gray-400 text-sm">+91 8248960558</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="h-4 w-4 text-amber-400 flex-shrink-0" />
-                <a 
-                  href="mailto:arunpandi47777@gmail.com"
-                  className="text-gray-400 hover:text-amber-400 transition-colors text-sm"
-                >
-                  arunpandi47777@gmail.com
-                </a>
-              </div>
               <div className="flex items-center space-x-3">
                 <Linkedin className="h-4 w-4 text-amber-400 flex-shrink-0" />
                 <a 
