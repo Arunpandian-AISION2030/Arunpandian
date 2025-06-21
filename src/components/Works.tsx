@@ -1,6 +1,8 @@
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { ExternalLink, Github, MessageCircle, FolderOpen } from "lucide-react";
 
 const Works = () => {
   const projects = [
@@ -35,9 +37,9 @@ const Works = () => {
       title: "Poster Design Collection",
       category: "Graphic Design",
       description: "A curated collection of poster designs created for various clients and personal projects, showcasing creativity in visual communication.",
-      image: "/lovable-uploads/f9766984-e4d5-4a71-bfd7-d8c72f41c4c6.png",
+      image: "/lovable-uploads/1f521ce4-c8bd-4627-85aa-7dfc104a8840.png",
       technologies: ["Adobe Photoshop", "Illustrator", "InDesign", "Figma"],
-      liveUrl: "#",
+      liveUrl: "https://poster-collection.vercel.app/",
       githubUrl: "#"
     }
   ];
@@ -120,10 +122,58 @@ const Works = () => {
             ))}
           </div>
           
-          <div className="text-center mt-12">
+          <div className="text-center mt-12 space-y-4">
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button 
+                  size="lg"
+                  className="bg-amber-600 hover:bg-amber-700 text-white px-6 sm:px-8 py-3 text-sm sm:text-base mr-4"
+                >
+                  <MessageCircle className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  About Me
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-md">
+                <DialogHeader>
+                  <DialogTitle className="text-center text-xl font-bold text-gray-900">
+                    Hi there! 👋
+                  </DialogTitle>
+                </DialogHeader>
+                <div className="space-y-4 py-4">
+                  <p className="text-gray-700 leading-relaxed">
+                    I'm <span className="font-semibold text-amber-600">Arunpandian</span>, a creative mind passionate about posters, graphics, websites & tech.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed">
+                    📌 This is my personal design space — where ideas become reality.
+                    Look around, explore my works, and if something clicks…
+                  </p>
+                  <p className="text-lg font-semibold text-gray-900 text-center">
+                    👉 Let's Work Together!
+                  </p>
+                  <div className="flex gap-3 justify-center pt-4">
+                    <Button 
+                      className="bg-amber-600 hover:bg-amber-700 text-white"
+                      onClick={() => window.open('mailto:arunpandi47777@gmail.com', '_blank')}
+                    >
+                      <MessageCircle className="mr-2 h-4 w-4" />
+                      Hire Me
+                    </Button>
+                    <Button 
+                      variant="outline"
+                      onClick={() => window.open('https://github.com/Arunpandian-AISION2030', '_blank')}
+                    >
+                      <FolderOpen className="mr-2 h-4 w-4" />
+                      See My Work
+                    </Button>
+                  </div>
+                </div>
+              </DialogContent>
+            </Dialog>
+            
             <Button 
               size="lg"
-              className="bg-amber-600 hover:bg-amber-700 text-white px-6 sm:px-8 py-3 text-sm sm:text-base"
+              variant="outline"
+              className="border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white px-6 sm:px-8 py-3 text-sm sm:text-base"
               onClick={() => window.open('https://github.com/Arunpandian-AISION2030', '_blank')}
             >
               <Github className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
@@ -132,6 +182,25 @@ const Works = () => {
           </div>
         </div>
       </div>
+      
+      {/* Footer */}
+      <footer className="mt-20 pt-8 border-t border-amber-200 bg-white">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center text-gray-600">
+            <p className="text-sm">
+              © 2025 Copyright by{" "}
+              <a 
+                href="https://arunx.studio.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-amber-600 hover:text-amber-700 font-medium"
+              >
+                arunx.studio.com
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
     </section>
   );
 };
