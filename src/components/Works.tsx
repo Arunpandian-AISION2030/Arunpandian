@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
@@ -30,15 +29,6 @@ const Works = () => {
       image: "/lovable-uploads/ed3291db-1f2d-4300-8408-d9e21b6c4ed6.png",
       technologies: ["React", "TypeScript", "Tailwind CSS", "Firebase"],
       liveUrl: "https://growup-journel.vercel.app/",
-      githubUrl: "#"
-    },
-    {
-      title: "Personal Blog Platform",
-      category: "Web Development",
-      description: "A dynamic blog platform where I share insights about technology, design trends, and personal experiences in the tech industry.",
-      image: "/lovable-uploads/cc3ba234-f191-4cff-bbad-4eb999d9af4f.png",
-      technologies: ["React", "Markdown", "CMS", "SEO Optimization"],
-      liveUrl: "#",
       githubUrl: "#"
     },
     {
