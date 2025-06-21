@@ -17,9 +17,9 @@ const Works = () => {
       title: "Mediq System Website",
       category: "Web Development",
       description: "A professional healthcare management system website with patient management, appointment scheduling, and medical records functionality.",
-      image: "/lovable-uploads/f9766984-e4d5-4a71-bfd7-d8c72f41c4c6.png",
+      image: "/lovable-uploads/725b95a3-b5e7-43ea-bd5d-86368c867862.png",
       technologies: ["React", "Node.js", "MongoDB", "Express"],
-      liveUrl: "#",
+      liveUrl: "https://mediq-app-3.vercel.app/",
       githubUrl: "#"
     },
     {
