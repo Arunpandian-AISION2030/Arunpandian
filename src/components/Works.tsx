@@ -1,8 +1,7 @@
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { ExternalLink, Github, MessageCircle, FolderOpen } from "lucide-react";
+import { ExternalLink, Github, FolderOpen } from "lucide-react";
 
 const Works = () => {
   const projects = [
@@ -122,61 +121,14 @@ const Works = () => {
             ))}
           </div>
           
-          <div className="text-center mt-12 space-y-4">
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button 
-                  size="lg"
-                  className="bg-amber-600 hover:bg-amber-700 text-white px-6 sm:px-8 py-3 text-sm sm:text-base mr-4"
-                >
-                  <MessageCircle className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                  About Me
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="sm:max-w-md">
-                <DialogHeader>
-                  <DialogTitle className="text-center text-xl font-bold text-gray-900">
-                    Hi there! 👋
-                  </DialogTitle>
-                </DialogHeader>
-                <div className="space-y-4 py-4">
-                  <p className="text-gray-700 leading-relaxed">
-                    I'm <span className="font-semibold text-amber-600">Arunpandian</span>, a creative mind passionate about posters, graphics, websites & tech.
-                  </p>
-                  <p className="text-gray-700 leading-relaxed">
-                    📌 This is my personal design space — where ideas become reality.
-                    Look around, explore my works, and if something clicks…
-                  </p>
-                  <p className="text-lg font-semibold text-gray-900 text-center">
-                    👉 Let's Work Together!
-                  </p>
-                  <div className="flex gap-3 justify-center pt-4">
-                    <Button 
-                      className="bg-amber-600 hover:bg-amber-700 text-white"
-                      onClick={() => window.open('mailto:arunpandi47777@gmail.com', '_blank')}
-                    >
-                      <MessageCircle className="mr-2 h-4 w-4" />
-                      Hire Me
-                    </Button>
-                    <Button 
-                      variant="outline"
-                      onClick={() => window.open('https://github.com/Arunpandian-AISION2030', '_blank')}
-                    >
-                      <FolderOpen className="mr-2 h-4 w-4" />
-                      See My Work
-                    </Button>
-                  </div>
-                </div>
-              </DialogContent>
-            </Dialog>
-            
+          <div className="text-center mt-12">
             <Button 
               size="lg"
               variant="outline"
               className="border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white px-6 sm:px-8 py-3 text-sm sm:text-base"
               onClick={() => window.open('https://github.com/Arunpandian-AISION2030', '_blank')}
             >
-              <Github className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+              <FolderOpen className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
               View More on GitHub
             </Button>
           </div>
