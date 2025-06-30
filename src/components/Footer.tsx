@@ -73,9 +73,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Section */}
+          {/* Contact Section - Only LinkedIn and Instagram */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-neutral-light">Contact</h3>
+            <h3 className="text-lg font-semibold text-neutral-light">Connect</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Linkedin className="h-4 w-4 text-electric-blue flex-shrink-0" />

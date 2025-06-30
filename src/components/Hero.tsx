@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail, Phone } from "lucide-react";
+import { ArrowDown, Linkedin, Instagram } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -41,7 +41,7 @@ const Hero = () => {
               I blend creativity with technology to bring ideas to life through compelling graphics and modern web applications.
             </p>
             
-            {/* Action Buttons */}
+            {/* Action Buttons - Only LinkedIn and Instagram */}
             <div className="flex flex-wrap justify-center gap-4 mb-12 animate-fade-in-delay-3">
               <Button 
                 variant="outline" 
@@ -55,34 +55,11 @@ const Hero = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="bg-neutral-light hover:bg-neutral-light/90 border-neutral-light text-neutral-dark hover:scale-105 transition-all duration-300 shadow-lg"
-                onClick={() => window.open('https://github.com/Arunpandian-AISION2030', '_blank')}
-              >
-                <Github className="mr-2 h-5 w-5" />
-                GitHub
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
                 className="bg-coral hover:bg-coral/90 border-coral text-neutral-light hover:scale-105 transition-all duration-300 shadow-lg"
-                onClick={() => window.open('tel:+918248960558', '_blank')}
+                onClick={() => window.open('https://www.instagram.com/arunx.studio/', '_blank')}
               >
-                <Phone className="mr-2 h-5 w-5" />
-                +91 8248960558
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="bg-neutral-light hover:bg-neutral-light/90 border-neutral-light text-neutral-dark hover:scale-105 transition-all duration-300 shadow-lg"
-                onClick={() => {
-                  const element = document.querySelector('#contact');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }}
-              >
-                <Mail className="mr-2 h-5 w-5" />
-                Contact
+                <Instagram className="mr-2 h-5 w-5" />
+                Instagram
               </Button>
             </div>
           </div>
