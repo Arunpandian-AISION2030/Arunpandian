@@ -44,14 +44,14 @@ const Works = () => {
   ];
 
   return (
-    <section id="works" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-white to-amber-50">
+    <section id="works" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-neutral-light to-white">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-neutral-dark mb-4">
               My Works
             </h2>
-            <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-neutral-dark/70 max-w-2xl mx-auto">
               A showcase of my creative projects spanning web development, graphic design, 
               and digital solutions that bring ideas to life.
             </p>
@@ -59,20 +59,20 @@ const Works = () => {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
             {projects.map((project, index) => (
-              <Card key={index} className="group overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-200">
+              <Card key={index} className="group overflow-hidden hover:shadow-2xl transition-all duration-300 border border-electric-blue/30">
                 <div className="relative overflow-hidden">
                   <img 
                     src={project.image}
                     alt={project.title}
                     className="w-full h-48 sm:h-56 lg:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
                     <div className="flex gap-2">
                       <Button 
                         size="sm" 
                         variant="secondary" 
-                        className="bg-white/90 hover:bg-white text-xs sm:text-sm"
+                        className="bg-electric-blue hover:bg-electric-blue/90 text-neutral-light text-xs sm:text-sm"
                         onClick={() => window.open(project.liveUrl, '_blank')}
                       >
                         <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4 mr-1" />
@@ -81,7 +81,7 @@ const Works = () => {
                       <Button 
                         size="sm" 
                         variant="secondary" 
-                        className="bg-white/90 hover:bg-white text-xs sm:text-sm"
+                        className="bg-coral hover:bg-coral/90 text-neutral-light text-xs sm:text-sm"
                         onClick={() => window.open(project.githubUrl, '_blank')}
                       >
                         <Github className="h-3 w-3 sm:h-4 sm:w-4 mr-1" />
@@ -93,16 +93,16 @@ const Works = () => {
                 
                 <div className="p-4 sm:p-6">
                   <div className="flex items-center justify-between mb-3">
-                    <span className="px-2 sm:px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs sm:text-sm font-medium">
+                    <span className="px-2 sm:px-3 py-1 bg-electric-blue/10 text-electric-blue rounded-full text-xs sm:text-sm font-medium border border-electric-blue/30">
                       {project.category}
                     </span>
                   </div>
                   
-                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 group-hover:text-amber-600 transition-colors">
+                  <h3 className="text-lg sm:text-xl font-semibold text-neutral-dark mb-3 group-hover:text-electric-blue transition-colors">
                     {project.title}
                   </h3>
                   
-                  <p className="text-sm sm:text-base text-gray-600 mb-4 leading-relaxed">
+                  <p className="text-sm sm:text-base text-neutral-dark/70 mb-4 leading-relaxed">
                     {project.description}
                   </p>
                   
@@ -110,7 +110,7 @@ const Works = () => {
                     {project.technologies.map((tech, techIndex) => (
                       <span 
                         key={techIndex}
-                        className="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs sm:text-sm"
+                        className="px-2 py-1 bg-neutral-light text-neutral-dark rounded text-xs sm:text-sm border border-neutral-dark/20"
                       >
                         {tech}
                       </span>
@@ -125,7 +125,7 @@ const Works = () => {
             <Button 
               size="lg"
               variant="outline"
-              className="border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white px-6 sm:px-8 py-3 text-sm sm:text-base"
+              className="border-coral text-coral hover:bg-coral hover:text-neutral-light px-6 sm:px-8 py-3 text-sm sm:text-base"
               onClick={() => window.open('https://github.com/Arunpandian-AISION2030', '_blank')}
             >
               <FolderOpen className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
