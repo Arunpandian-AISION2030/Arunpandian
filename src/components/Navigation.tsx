@@ -23,10 +23,10 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-navy/95 backdrop-blur-sm border-b border-electric-blue z-50">
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center h-16">
-          <div className="font-bold text-xl text-gray-900">
+          <div className="font-bold text-xl text-neutral-light">
             Arun Pandian
           </div>
           
@@ -36,7 +36,7 @@ const Navigation = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-gray-700 hover:text-gray-900 transition-colors font-medium"
+                className="text-neutral-light hover:text-coral transition-colors font-medium"
               >
                 {item.name}
               </button>
@@ -47,7 +47,7 @@ const Navigation = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="md:hidden text-neutral-light hover:bg-electric-blue/20"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -56,13 +56,13 @@ const Navigation = () => {
         
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-200">
+          <div className="md:hidden py-4 border-t border-electric-blue">
             <div className="flex flex-col space-y-2">
               {navItems.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-left px-4 py-2"
+                  className="text-neutral-light hover:text-coral transition-colors font-medium text-left px-4 py-2"
                 >
                   {item.name}
                 </button>

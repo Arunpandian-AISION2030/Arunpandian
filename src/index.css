@@ -7,89 +7,89 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 245 247 250; /* #F5F7FA Light Gray */
+    --foreground: 51 51 51; /* #333333 Dark Gray */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 245 247 250; /* #F5F7FA Light Gray */
+    --card-foreground: 51 51 51; /* #333333 Dark Gray */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 245 247 250; /* #F5F7FA Light Gray */
+    --popover-foreground: 51 51 51; /* #333333 Dark Gray */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 27 38 49; /* #1B2631 Navy */
+    --primary-foreground: 245 247 250; /* #F5F7FA Light Gray */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 171 228; /* #00ABE4 Electric Blue */
+    --secondary-foreground: 245 247 250; /* #F5F7FA Light Gray */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 245 247 250; /* #F5F7FA Light Gray */
+    --muted-foreground: 51 51 51; /* #333333 Dark Gray */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 255 107 107; /* #FF6B6B Coral */
+    --accent-foreground: 245 247 250; /* #F5F7FA Light Gray */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 255 107 107; /* #FF6B6B Coral */
+    --destructive-foreground: 245 247 250; /* #F5F7FA Light Gray */
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 171 228; /* #00ABE4 Electric Blue */
+    --input: 245 247 250; /* #F5F7FA Light Gray */
+    --ring: 0 171 228; /* #00ABE4 Electric Blue */
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 27 38 49; /* #1B2631 Navy */
+    --sidebar-foreground: 245 247 250; /* #F5F7FA Light Gray */
+    --sidebar-primary: 0 171 228; /* #00ABE4 Electric Blue */
+    --sidebar-primary-foreground: 245 247 250; /* #F5F7FA Light Gray */
+    --sidebar-accent: 255 107 107; /* #FF6B6B Coral */
+    --sidebar-accent-foreground: 245 247 250; /* #F5F7FA Light Gray */
+    --sidebar-border: 0 171 228; /* #00ABE4 Electric Blue */
+    --sidebar-ring: 0 171 228; /* #00ABE4 Electric Blue */
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Custom color variables for the new palette */
+    --navy: 27 38 49; /* #1B2631 */
+    --electric-blue: 0 171 228; /* #00ABE4 */
+    --coral: 255 107 107; /* #FF6B6B */
+    --neutral-light: 245 247 250; /* #F5F7FA */
+    --neutral-dark: 51 51 51; /* #333333 */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 27 38 49; /* #1B2631 Navy */
+    --foreground: 245 247 250; /* #F5F7FA Light Gray */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 27 38 49; /* #1B2631 Navy */
+    --card-foreground: 245 247 250; /* #F5F7FA Light Gray */
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 27 38 49; /* #1B2631 Navy */
+    --popover-foreground: 245 247 250; /* #F5F7FA Light Gray */
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 245 247 250; /* #F5F7FA Light Gray */
+    --primary-foreground: 27 38 49; /* #1B2631 Navy */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 171 228; /* #00ABE4 Electric Blue */
+    --secondary-foreground: 245 247 250; /* #F5F7FA Light Gray */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 51 51 51; /* #333333 Dark Gray */
+    --muted-foreground: 245 247 250; /* #F5F7FA Light Gray */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 255 107 107; /* #FF6B6B Coral */
+    --accent-foreground: 245 247 250; /* #F5F7FA Light Gray */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 255 107 107; /* #FF6B6B Coral */
+    --destructive-foreground: 245 247 250; /* #F5F7FA Light Gray */
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 0 171 228; /* #00ABE4 Electric Blue */
+    --input: 51 51 51; /* #333333 Dark Gray */
+    --ring: 0 171 228; /* #00ABE4 Electric Blue */
+    --sidebar-background: 27 38 49; /* #1B2631 Navy */
+    --sidebar-foreground: 245 247 250; /* #F5F7FA Light Gray */
+    --sidebar-primary: 0 171 228; /* #00ABE4 Electric Blue */
+    --sidebar-primary-foreground: 245 247 250; /* #F5F7FA Light Gray */
+    --sidebar-accent: 255 107 107; /* #FF6B6B Coral */
+    --sidebar-accent-foreground: 245 247 250; /* #F5F7FA Light Gray */
+    --sidebar-border: 0 171 228; /* #00ABE4 Electric Blue */
+    --sidebar-ring: 0 171 228; /* #00ABE4 Electric Blue */
   }
 }
 
@@ -138,8 +138,27 @@ html {
 
 /* Custom gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #00ABE4 0%, #FF6B6B 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+/* New color utility classes */
+.bg-navy { background-color: rgb(27 38 49); }
+.bg-electric-blue { background-color: rgb(0 171 228); }
+.bg-coral { background-color: rgb(255 107 107); }
+.bg-neutral-light { background-color: rgb(245 247 250); }
+.bg-neutral-dark { background-color: rgb(51 51 51); }
+
+.text-navy { color: rgb(27 38 49); }
+.text-electric-blue { color: rgb(0 171 228); }
+.text-coral { color: rgb(255 107 107); }
+.text-neutral-light { color: rgb(245 247 250); }
+.text-neutral-dark { color: rgb(51 51 51); }
+
+.border-navy { border-color: rgb(27 38 49); }
+.border-electric-blue { border-color: rgb(0 171 228); }
+.border-coral { border-color: rgb(255 107 107); }
+.border-neutral-light { border-color: rgb(245 247 250); }
+.border-neutral-dark { border-color: rgb(51 51 51); }

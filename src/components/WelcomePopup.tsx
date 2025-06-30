@@ -27,34 +27,34 @@ const WelcomePopup = () => {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="sm:max-w-md">
+      <DialogContent className="sm:max-w-md bg-neutral-light border border-electric-blue">
         <DialogHeader>
-          <DialogTitle className="text-center text-xl font-bold text-gray-900 pr-6">
+          <DialogTitle className="text-center text-xl font-bold text-neutral-dark pr-6">
             Hi there! 👋
           </DialogTitle>
           <Button
             variant="ghost"
             size="icon"
-            className="absolute right-4 top-4 h-6 w-6"
+            className="absolute right-4 top-4 h-6 w-6 text-neutral-dark hover:text-coral"
             onClick={handleClose}
           >
             <X className="h-4 w-4" />
           </Button>
         </DialogHeader>
         <div className="space-y-4 py-4">
-          <p className="text-gray-700 leading-relaxed">
-            I'm <span className="font-semibold text-amber-600">Arunpandian</span>, a creative mind passionate about posters, graphics, websites & tech.
+          <p className="text-neutral-dark leading-relaxed">
+            I'm <span className="font-semibold text-electric-blue">Arunpandian</span>, a creative mind passionate about posters, graphics, websites & tech.
           </p>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-neutral-dark leading-relaxed">
             📌 This is my personal design space — where ideas become reality.
             Look around, explore my works, and if something clicks…
           </p>
-          <p className="text-lg font-semibold text-gray-900 text-center">
+          <p className="text-lg font-semibold text-neutral-dark text-center">
             👉 Let's Work Together!
           </p>
           <div className="flex gap-3 justify-center pt-4">
             <Button 
-              className="bg-amber-600 hover:bg-amber-700 text-white"
+              className="bg-electric-blue hover:bg-electric-blue/90 text-neutral-light"
               onClick={handleHireMe}
             >
               <MessageCircle className="mr-2 h-4 w-4" />
@@ -62,6 +62,7 @@ const WelcomePopup = () => {
             </Button>
             <Button 
               variant="outline"
+              className="border-coral text-coral hover:bg-coral hover:text-neutral-light"
               onClick={() => {
                 window.open('https://github.com/Arunpandian-AISION2030', '_blank');
                 setIsOpen(false);
